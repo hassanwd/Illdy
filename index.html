@@ -1,0 +1,1365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    #main{
+        width: 1516px;
+        height: 100vh;
+        background-attachment: fixed;
+        background-image: url(./images/front-page-header.jpg);
+        background-size: cover;
+        padding: 1px;
+    }
+    #logo{
+        margin-top: 35px;
+        margin-left: 190px;
+    }
+    #nav-a{
+        display: inline;
+        margin-left: 40px ;
+        font-size: 20px;
+
+        
+    }
+    #nav-a a{
+        text-decoration: none;  
+        color: white;
+    }
+    #nav-a a:hover{
+        color: yellow;
+    }
+    #nav{
+        margin-left: 600px;
+        margin-top: -40px;
+    }
+    #banner{
+        height: 400px;
+        margin-left: 190px;
+        margin-top: 220px;
+    }
+    #banner-heading span{
+        color: yellow;
+    }
+   #banner-heading{
+       font-size: 110px;
+       color: white;
+    }
+    #banner-para{
+        font-size: 17px;
+        color: white;
+        margin-left: 200px;
+        margin-top: 20px;
+    }
+    #banner-para span{
+        margin-left: 200px;
+        margin-top: 5px;
+    }
+    #btn{
+        width: 240px;
+        height: 60px;
+        margin-left: 300px;
+        border: 3px solid white;
+        background-color: transparent;
+        margin-top: 73px;
+        border-radius: 3px;
+        color: white;
+
+    }
+    #btn-a{
+        width: 240px;
+        border-radius: 3px;
+        height: 60px;
+        border: none;
+        cursor: pointer;
+        transition: .5s;
+        margin-left: 40px;
+        color: white;
+        background-color: rgb(250, 205, 56);
+    }
+    #btn:hover{
+        opacity: 0.6;
+    }
+    #btn-a:hover{
+       background-color: rgb(38, 38, 131);
+    }
+    #About{
+        width: 1516px;
+        padding: 1px;
+        height: 480px;
+    }
+    #about-heading{
+        margin-left: 710px;
+        margin-top: 48px;
+        color: rgb(63, 50, 80);
+    }
+    #about-para{
+        margin-top: 50px;
+        margin-left: 350px;
+    }
+    #about-para span{
+        margin-left: 190px;
+    }
+    #box{
+        width: 50px;
+        height: 30px;
+        color: white;
+        background-color: rgb(196, 43, 43);
+        margin-top: 60px;
+        border-radius: 5px;
+        margin-left: 430px;
+        font-size:25px;
+        padding-left: 7px;
+    }
+    #box-a{
+        width: 50px;
+        color: white;
+        height: 30px;
+        font-size:25px;
+        padding-left: 7px;
+        border-radius: 5px;
+        background-color:rgb(201, 201, 47);
+        margin-top: -30px;
+        margin-left: 850px;
+    }
+    #box-b{
+        width: 50px;
+        border-radius: 5px;
+        height: 30px;
+        color: white;
+        font-size:25px;
+        padding-left: 7px;
+        background-color:purple;
+        margin-top: -30px;
+        margin-left: 1230px;
+    }
+    #circle{
+        border-radius: 50%;
+        background-color: rgb(196, 43, 43);
+        height: 13px;
+        width: 13px;
+        margin-top: 10px;
+        margin-left: 455px;
+    }
+    #circle-a{
+        border-radius: 50%;
+        background-color: rgb(201, 201, 47);
+        height: 13px;
+        width: 13px;
+        margin-top: -15px;
+        margin-left: 875px;
+    }
+    #circle-b{
+        border-radius: 50%;
+        background-color: purple;
+        height: 13px;
+        width: 13px;
+        margin-top: -15px;
+        margin-left: 1255px;
+    }
+    #line{
+        width: 203px;
+        height: 7px;
+        margin-left: 253px;
+        margin-top: -6px;
+        background-color: rgb(196, 43, 43);
+    }
+    #line-a{
+        width: 203px;
+        height: 7px;
+        margin-left: 673px;
+        margin-top: -9px;
+        background-color:rgb(201, 201, 47);
+    }
+    #line-b{
+        width: 203px;
+        height: 7px;
+        margin-left: 1055px;
+        margin-top: -9px;
+        background-color:purple;
+    }
+    #line-c{
+        width: 121px;
+        height: 7px;
+        margin-left: 467px;
+        margin-top: -3px;
+        background-color: silver;
+    }
+    #line-d{
+        width:63px;
+        height: 7px;
+        margin-left: 887px;
+        margin-top: -9px;
+        background-color: silver;
+    }
+    #line-e{
+        width: 51px;
+        height: 7px;
+        margin-left: 1268px;
+        margin-top: -9px;
+        background-color:silver;
+    }
+    #icon{
+        height: 50px;
+        color:rgb(196, 43, 43) ;
+        width: 150px;
+        font-size: 20px;
+        margin-left: 255px;
+        margin-top: 30px;
+           }
+    .icon-cstm{
+        font-size:20px;
+        padding-right: 10px;
+    }
+    #icon-a{
+        height: 50px;
+        color: rgb(201, 201, 47);
+        width: 150px;
+        font-size: 20px;
+        margin-left: 675px;
+        margin-top: -50px;
+        
+    }
+    #icon-b{
+        width: 150px;
+        height: 50px;
+        font-size: 20px;
+        margin-top: -50px;
+        margin-left: 1055px;
+    }
+    #project{
+        height: 600px;
+        width: 1516px;
+       padding: 1px;
+    }
+    #project-upper{
+        width: 1516px;
+        height: 191px;
+        padding: 1px;
+        background-color: rgb(204, 192, 192);
+    }
+    #project-lower{
+        width: 1516px;
+        height: 413px;
+        margin-top: 0px;
+    }
+    #project-heading{
+        margin-top: 50px;
+        margin-left: 650px;
+        font-size: 40px;
+    }
+    #project-para{
+        margin-top: 10px;
+        margin-left: 580px;
+        font-size: 20px;
+    }
+#pro-pic{
+    height: 408px;
+    width: 375.6px;
+}
+#testimonials{
+   height: 632px;
+    background-image: url(./images/Download\ premium\ image\ of\ Neon\ tropical\ Monstera\ leaf\ \ banner\ 1219984.jpg);
+    background-size: cover;
+    padding: 1px;
+    width: 100%;
+}
+#testimonials-upper-a{
+    border-radius: 50%;
+    margin-top: 100px;
+    margin-left: 690px;
+}
+#testimonials-upper{
+    margin-top: -200px;
+    font-size: 40px;
+    color: white;
+    margin-left: 650px;
+}
+#testimonials-lower{
+    height: 150px;
+    padding: 1px;
+    width: 660px;
+    background-color: rgb(77, 18, 126);
+    margin-left: 430px;
+    color: white;
+    font-size: 20px;
+    margin-top: 170px;
+} 
+#lower-a{
+    margin-top:30px;
+    margin-left: 10px;
+}  
+#lower-a span{
+    margin-left: 260px;
+}
+#lower-main{
+    height: 200px;
+    padding: 1px;
+    width: 500px;
+    margin-left: 500px;
+    margin-top: 20px;
+}
+#lower-heading{ 
+    color: white;
+    margin-top: 10px;
+    margin-left: 190px;
+    font-size: 25px;
+}
+#lower-circle{
+    border-radius: 50%;
+    border-color: transparent;
+    border: 2px solid white;
+    height: 10px;
+    width: 10px;
+    margin-left: 200px;
+    margin-top: 80px;
+}
+#lower-circle-a{
+    border-radius: 50%;
+    background-color: white;
+    height: 10px;
+    width: 10px;
+    margin-left: 230px;
+    margin-top: -14px;
+    border: 2px solid white;
+}
+#lower-circle-b{
+    border-radius: 50%;
+    background-color: white;
+    height: 10px;
+    width: 10px;
+    margin-left: 260px;
+    margin-top: -14px;
+    border: 2px solid white;
+}
+#lower-circle-c{
+    border-radius: 50%;
+    background-color: white;
+    height: 10px;
+    width: 10px;
+    margin-left: 290px;
+    margin-top: -14px;
+    border: 2px solid white;
+}
+#services{
+    height: 475px;
+    width: 1516p;
+    padding: 1px;
+}
+#sr-1{
+    width: 805px;
+    height: 120px;
+    margin-top: 10px;
+    margin-left: 350px;
+    padding: 1px;
+}
+#sr-2{
+    margin-left:330px;
+    font-size: 50px;
+    margin-top: 30px;
+    color: gray;
+}
+#sr-3{
+    margin-top: 10px;
+    margin-left: 10px;
+    color: gray;
+    font-size: 17px;
+}
+#sr-4{
+    height: 320px;
+    width: 459px;
+    margin-top: 10px;
+    margin-left: 60px;
+}
+#sr-5{
+    height: 320px;
+    width: 459px;
+     margin-top: -320px;
+    margin-left: 510px;
+}
+#sr-6{
+    height: 320px;
+    width: 459px;
+    margin-top: -320px;
+    margin-left: 970px;
+}
+#sr-a{
+ margin-top: 20px;
+ margin-left: 160px;
+ color: red;
+}
+.icon-cstm-a{
+    color: red;
+    font-size: 30px;
+    margin-top: 10px;
+    margin-left:230px ;
+}
+#sr-c{
+ margin-top: 20px;
+ margin-left: 160px;
+ color: purple;
+}
+.icon-cstm-c{
+    color:purple;
+    font-size: 30px;
+    margin-top: 10px;
+    margin-left:230px ;
+}
+#sr-b{
+ margin-top: 20px;
+ margin-left: 140px;
+ color:rgb(213, 213, 27);
+}
+.icon-cstm-b{
+    color:rgb(213, 213, 27);
+    font-size: 30px;
+    margin-top: 10px;
+    margin-left:230px ;
+}
+#content-a{
+    color: gray;
+    font-size: 20px;
+    margin-left: 20px;
+     margin-top: 20px;
+
+}
+#content-b{
+    color: gray;
+    margin-left: 20px;
+    font-size: 20px;
+     margin-top: 20px;
+
+}
+#content-c{
+    color: gray;
+    margin-left: 20px;
+    font-size: 20px;
+     margin-top: 20px;
+
+}
+#span-c{
+    margin-left: 50px;
+}
+#span-b{
+    margin-left: 50px;
+}
+#span-a{
+    margin-left: 50px;
+}
+#front{
+    background-color: rgb(19, 42, 46);
+    height: 1000px;
+    padding: 1px;
+    width: 100%;
+}
+#front-a{
+    height: 552px;
+    width: 364px;
+    padding: 1px;
+    background-color: white;
+    margin-top: 30px;
+    margin-left: 160px;
+
+}
+#front-b{
+    height: 602px;
+    width: 364px;
+    padding:1px;
+    background-color: white;
+    margin-left: 570px;
+    margin-top: -552px;
+}
+#front-c{
+    height: 552px;
+    width: 364px;
+    padding: 1px;
+    background-color: white;
+    margin-top:-602px;
+    margin-left: 980px;
+}
+#front-d{
+    width: 100%;
+    padding: 1px;
+    height: 300px;
+    margin-top: 10px;
+}
+#front-heading{
+    color: white;
+    font-size: 30px;
+    margin-left: 700px;
+    margin-top: 70px;
+}
+#front-para{
+    color: gray;
+    font-size: 20px;
+    margin-top: 10px;
+    margin-left: 300px;
+}
+#front-e{
+    background-color:rgb(213, 213, 27);
+    height: 50px;
+    border-radius: 5px;
+    margin-left: 700px;
+    margin-top: 70px;
+    width: 160px;
+    padding: 1px;
+}
+#front-e:hover{
+    background-color: rgb(63, 29, 117);
+}
+#front-e-a{
+    border-radius: 50%;
+    background-color: white;
+    margin-top: 17px;
+    margin-left: 35px;
+    height: 15px;
+    width: 15px;
+    padding: 1px;
+}
+.icon-cstm-d{
+    color:white;
+    margin-top: 18px;
+    margin-left: 40px;
+}
+#text{
+    color: white;
+    font-size: 20px;
+    margin-top: -21px;
+    margin-left: 60px;
+}
+#front-img{
+    width: 364px;
+}
+#front-img-a{
+    width: 364px;
+}
+#front-img-b{
+    width: 364px;
+}
+#a-para{
+    margin-top: 40px;
+    margin-left: 20px;
+    font-size: 20px;
+}
+#a-heading{
+    margin-top: 20px;
+    margin-left: 20px;
+}
+#b-para{
+    margin-top: 40px;
+    margin-left: 20px;
+    font-size: 20px;
+}
+#b-heading{
+    margin-top: 20px;
+    margin-left: 20px;
+}
+#c-para{
+    margin-top: 40px;
+    margin-left: 20px;
+    font-size: 20px;
+}
+#c-heading{
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+#small{
+        width:100%;
+        background-attachment: fixed;
+        margin-top: 100px;
+        background-image: url(./images/front-page-counter.jpg);
+        padding: 1px;
+        height: 200px;
+    }
+    
+    #small-a{
+        width:100px;
+        height: 148px;
+        padding: 1px;
+        color: white;
+        font-size: 30px;
+        margin-top: 40px;
+        margin-left: 250px;
+        
+    }
+    #small-c{
+        width:100px;
+        height: 148px;
+        color: white;
+        padding: 1px;
+        font-size: 30px;
+        margin-top: -97px;
+        margin-left: 700px;
+        
+    }
+    #small-e{
+        width:100px;
+        font-size: 30px;
+        margin-top: -105px;
+        height: 148px;
+        padding: 1px;
+        color:white;
+        margin-left: 1100px;
+    }
+    #word{
+        margin-top: -0px;
+    }
+    #word-1{
+        margin-top: -0px;
+    }
+    #word-2{
+        margin-top: -0px;
+    }
+   #small-line{
+       width:1px;
+       height:100px;
+       background-color: white;
+       margin-top: -145px;
+       margin-left: 500px;
+   }
+   #small-line-a{
+       width:1px;
+       height:100px;
+       background-color:white;
+       margin-top: -150px;
+       margin-left: 950px;
+   }
+   #team{
+       width:100%;
+       padding:1px;
+       height:515px;
+       background-color:rgb(235, 226, 226);
+   }
+   #team-a{
+       width:100%;
+       margin-top: 50px;
+       height:150px;
+       
+   }
+   #team-heading{
+       color:rgb(66, 61, 61);
+       font-size: 40px;
+       margin-top:10px;
+       margin-left:670px;
+   }
+   #team-para{
+       margin-left: 450px;
+       margin-top: 5px;
+       font-size: 20px;
+       color: rgb(78, 76, 76);
+   }
+   #team-circle{
+       background-image: url(./images/front-page-team-1.jpg);
+       height: 130px;
+       width: 130px;
+       background-size: cover;
+       border-radius:50%;
+       margin-top: -20px;
+       margin-left: 130px;
+   }
+   #team-circle-a{
+       background-image: url(./images/front-page-team-2.jpg);
+       height: 130px;
+       width: 130px;
+       background-size: cover;
+       border-radius:50%;
+       margin-top:-130px;
+       margin-left: 540px;
+   }
+
+   #team-circle-b{
+       background-image: url(./images/front-page-team-3.jpg);
+       height: 130px;
+       width: 130px;
+       background-size: cover;
+       border-radius:50%;
+       margin-top: -125px;
+       margin-left: 970px;
+   }
+   #team-circle-c{
+       width: 250px;
+       height: 300px;
+       padding: 1px;
+       margin-top: -155px;
+       margin-left: 270px;
+
+   }
+   #team-circle-d{
+       width: 250px;
+       padding: 1px;
+       height: 300px;
+       margin-top: -295px;
+       margin-left: 685px;
+
+   }
+   #team-circle-e{
+       width: 250px;
+       height: 300px;
+       padding: 1px;
+       margin-top: -295px;
+       margin-left: 1115px;
+
+   }
+    #team-circle-c-a{
+        color: rgb(66, 61, 61);
+        margin-top: 20px;
+
+    }
+    #team-circle-c-b{
+        color: rgb(214, 38, 38);
+        margin-top: 10px;
+
+    }
+    #team-circle-c-c{
+        color: rgb(66, 61, 61);
+        margin-top: 30px;
+        font-size: 20px;
+
+    }
+    #team-circle-d-a{
+        color: rgb(66, 61, 61);
+        margin-top: 20px;
+
+    }
+    #team-circle-d-b{
+        color: rgb(196, 190, 8);
+        margin-top: 10px;
+
+    }
+    #team-circle-d-c{
+        color: rgb(66, 61, 61);
+        margin-top: 30px;
+        font-size: 20px;
+
+    }
+    #team-circle-e-a{
+        color: rgb(66, 61, 61);
+        margin-top: 20px;
+
+    }
+    #team-circle-e-b{
+        color: rgb(101, 101, 91);
+        margin-top: 10px;
+
+    }
+    #team-circle-e-c{
+        color: rgb(66, 61, 61);
+        margin-top: 30px;
+        font-size: 20px;
+
+    } 
+    #circle-icon{
+        display: inline-block;
+        border-radius: 50%;
+        height: 30px;
+        border: 1px solid red;
+        width: 30px;
+        margin-left: 5px;
+        margin-top: 10px;
+    }
+    #circle-icon-a{
+        display: inline-block; 
+        border-radius: 50%;
+        width: 30px;
+        height: 30px;
+        border: 1px solid rgb(137, 137, 10);
+        margin-top: 10px;
+        margin-left: 5px;
+    }
+    
+    #circle-icon-b{
+        display: inline-block;
+        border-radius: 50%;
+        height: 30px;
+        border: 1px solid gray;
+        width: 30px;
+        margin-left: 5px;
+        margin-top: 10px; 
+    }
+   .icon-cstm-e{
+       color: red;
+       margin-left: 8px;
+       margin-top: 7px;
+   }
+   .icon-cstm-f{
+       color: rgb(137, 137, 10);
+       margin-left: 8px;
+       margin-top: 7px;
+   }
+   .icon-cstm-g{
+       color:rgb(140, 138, 138);
+       margin-left: 8px;
+       margin-top: 7px;
+   }
+   #contact{
+       height: 870px;
+       width: 100%;
+       padding: 1px;
+   }
+   #contact-main{
+    width: 300px;
+    height: 100px;
+    margin-top: 50px;
+    margin-left: 550px;
+   }
+   #contact-heading{
+       color: rgb(51, 50, 50);
+       margin-top: 80px;
+       margin-left: 70px;
+       font-size: 40px;
+   }
+   #contact-a{
+       width: 400px;
+       height: 100px;
+       padding: 1px;
+       margin-left: 1px;
+       margin-top: -15px;
+   }
+   #contact-b{
+   margin-top: 30px;
+   color: rgb(213, 213, 27);
+   margin-left: 105px;
+   font-size: 20px;
+   }
+   #contact-c{
+   height: 50px;
+   width: 1px;
+   background-color:rgb(64, 63, 63);
+   margin-left: 200px;
+   margin-top: -25px;
+   }
+   #contact-d{
+       margin-left: 225px;
+       color: rgb(73, 72, 72);
+       margin-top: -45px;
+   }
+   #contact-e{
+       width: 500px;
+       height: 100px;
+       padding: 1px;
+       margin-left: 435px;
+       margin-top: -100px;
+   }
+   #contact-f{
+   margin-top: 30px;
+   color: c;
+   margin-left: 95px;
+   font-size: 20px;
+   }
+   #contact-g{
+   height: 50px;
+   width: 1px;
+   background-color:rgb(64, 63, 63);
+   margin-left: 280px;
+   margin-top: -25px;
+   }
+   #contact-h{
+       margin-left: 300px;
+       color: rgb(73, 72, 72);
+       margin-top: -45px;
+   }
+   #contact-i{
+       width: 200px;
+       height: 50px;
+       margin-left: 1220px;
+       margin-top: -70px;
+   }
+   .icon-cstm-h{
+       color: gray;
+       margin-top: 10px;
+       margin-left: 20px;
+       display: inline-block;
+   }
+   #box-c{
+       width: 400px;
+       height: 100px;
+       margin-top: 70px;
+       margin-left: 100px;
+       
+
+   }
+   #box-d{
+       width: 400px;
+       height: 100px;
+       margin-top: -100px;
+       margin-left: 530px;
+       
+
+   }
+   #box-e{
+       width: 400px;
+       height: 100px;
+       margin-top: -100px;
+       margin-left: 960px;
+       
+
+   }
+   #box-f{
+       width: 1260px;
+       height: 300px;
+       margin-top:0px;
+       margin-left: 100px;
+   }
+   #span-a{
+       font-size: 20px;
+       margin-left: 1px;
+       color: rgb(73, 72, 72);
+   }
+   #input-a{
+       font-size: 20px;
+       color: gray;
+       height: 35px;
+       width: 380px;
+       border: 1px solid gray;
+    background-color: rgb(236, 232, 232);
+    
+   }
+   #span-b{
+       font-size: 20px;
+       margin-left: 1px;
+       color: rgb(73, 72, 72);
+   }
+   #input-b{
+       font-size: 20px;
+       height: 35px;
+       width: 380px;
+       color: gray;
+       border: 1px solid gray;
+       background-color: rgb(236, 232, 232);
+   }
+   #span-c{
+       font-size: 20px;
+       margin-left: 1px;
+       color: rgb(73, 72, 72);
+   }
+   #input-c{
+       font-size: 20px;
+       color: gray;
+       height: 35px;
+       width: 380px;
+       border: 1px solid gray;
+       background-color: rgb(236, 232, 232);
+   }
+   #span-d{
+       font-size: 20px;
+       color: rgb(73, 72, 72);
+   }
+   #input-d{
+       font-size: 20px;
+       height: 300px;
+       border: 1px solid gray;
+       width: 1230px;
+       color:gray;
+       background-color: rgb(236, 232, 232);
+   }
+   #btn-btn{
+       background-color: rgb(213, 213, 27);
+       color: white;
+       width: 150px;
+       cursor: pointer;
+       height: 40px;
+       border-radius: 5px;
+       font-size: 20px;
+       margin-top: 65px;
+       margin-left: 1185px;
+       border: none;
+   }
+   #last{
+       width: 100%;
+       height: 40vh;
+       padding: 1px;
+       background-color: #292825;
+   }
+   #last-a{
+       width: 32vh;
+       height: 5vh;
+       margin-top: 40px;
+       margin-left: 10px;
+       display: inline-block;
+   }
+   #last-b{
+       width: 32vh;
+       height: 5vh;
+       margin-top: 0px;
+       margin-left: 10px;
+       display: inline-block;
+   }
+   .icon-cstm-i{
+       color: skyblue;
+       margin-left: 0vh;
+       font-size: 10px;
+       margin-top: 3vh;
+   }
+   .icon-cstm-i:hover{
+       color: purple;
+   }
+    #last-last{
+       width: 110vh;
+       margin-left: 40vh;
+       height: 30vh;
+   }
+    #hello{
+       color: skyblue;
+       margin-left: 3vh;
+       font-size: 15px;
+   }
+   #hello:hover{
+       color: purple;
+   }
+   #a-a{
+       color: white;
+       margin-left: -0vh;
+       font-size: 20px;
+   }
+    #end{
+        width: 1515px;
+        height: 8vh;
+        margin-top: 13px;
+        padding: 1px;
+        margin-left: -40vh;
+        background-color: #363636;
+    }
+    #end-c{
+        width: 80vh;
+        margin-top: 14px;
+        margin-left: 70vh;
+        height: 25px;
+       
+    }
+    #end-b{
+        color: white;
+        margin-left: -0px;
+    }
+    #a-heading:hover{
+        color:  rgb(213, 213, 27);
+    }
+    #b-heading:hover{
+        color:  rgb(213, 213, 27);
+    }
+    #c-heading:hover{
+        color:  rgb(213, 213, 27);
+    }
+    #hello-a{
+        color: skyblue;
+    }
+    
+</style>
+<body>
+    <div id="main">
+        <div id="logo">
+            <img src="./images/cropped-footer-logo-1.png" alt="">
+        </div>
+            <ul id="nav">
+                <li id="nav-a"><a href="#About">About</a></li>
+                <li id="nav-a"><a href="#Portfolio">Portfolio</a></li>
+                <li id="nav-a"><a href="#Testimonials">Testimonials</a></li>
+                <li id="nav-a"><a href="#Services">Services</a></li>
+                <li id="nav-a"><a href="#Blog">Blog</a></li>
+                <li id="nav-a"><a href="#Our Team">Our Team</a></li>
+                <li id="nav-a"><a href="#Contact Us">Contact Us</a></li>
+            </ul>     
+            <div id="banner">
+              <h1 id="banner-heading"> Clean <span>.</span>Slick<span>.</span>Pixel Perfect</h1>
+              <p id="banner-para">lldy is a great one-page theme, perfect for developers and designers but also for someone who just wants a 
+                 <br> <span>new website for his business. Try it now!</span> </p>
+                 <button id="btn">Learn more</button>
+                 <button id="btn-a">Download</button>
+            </div> 
+            </div>
+            <div id="About">
+                  <h1 id="about-heading">About</h1>
+                  <p id="about-para">It is an amazng one-page theme with great features that offers an incredible experience. It is easy to install,
+                    make changes, adapt for your <br> business. A modern design with clean lines and styling for a wide variety of content, exactly how a
+                     business design should be. You can add<br> <span> as many images as you want to the main header area and turn them into slider.</span></p>
+                     <div id="box">60%</div>
+                     <div id="box-a">82%</div>
+                     <div id="box-b">86%</div>
+                     <div id="circle"></div>
+                     <div id="circle-a"></div>
+                     <div id="circle-b"></div>
+                     <div id="line"></div>
+                     <div id="line-a"></div>
+                     <div id="line-b"></div>
+                     <div id="line-c"></div>
+                     <div id="line-d"></div>
+                     <div id="line-e"></div>
+
+                     <div id="icon">
+                         <i class="fas fa-font icon-cstm"></i>
+                         <span>Typography</span>
+                     </div>
+                     <div id="icon-a">
+                         <i class="fas fa-pen icon-cstm"></i>
+                         <span> Design</span>
+                     </div>
+                     <div id="icon-b">
+                        <i class="fas fa-code icon-cstm"></i>
+                        <span>Development</span>
+                     </div>
+                     <div id="project">
+                      <div id="project-upper">
+                          <h1 id="project-heading">Projects</h1>
+                          <p id="project-para">
+                            You'll love our work. Check it out!
+                          </p>
+                      </div>
+                      <div id="project-lower">
+                          <img id="pro-pic" src="./images/front-page-project-1.jpg" alt="">
+                          <img id="pro-pic" src="./images/front-page-project-2.jpg" alt="">
+                          <img id="pro-pic" src="./images/front-page-project-3.jpg" alt="">
+                          <img id="pro-pic" src="./images/front-page-project-4.jpg" alt="">
+                      </div>
+                     </div>
+                     <div id="testimonials">
+                             <img id="testimonials-upper-a" src="./images/front-page-team-3.jpg" alt="">
+                             <div id="testimonials-upper">Testimonials</div>
+                             <div id="testimonials-lower">
+                                 <p id="lower-a"> Lorem ipsum dolor sit amet consectetur adipisicing elit. AnIn order to help you grow your business, our carefully selected experts can advise you in in the following areas:imi vitae reiciendis illo rerum mollitia voluptas. Laudantium sunt alias tempore sapiente ab molestias illum. Nisi at nobis minus veniam <span>mollitia quod.</span></p>
+                             </div>
+                             <div id="lower-main">
+                                 <h2 id="lower-heading">Mike Muller</h2>
+                                 <div id="lower-circle"></div>
+                                 <div id="lower-circle-a"></div>
+                                 <div id="lower-circle-b"></div>
+                                 <div id="lower-circle-c"></div>
+                             </div>
+                             <div id="services">
+                                 <div id="sr-1">
+                               <h1 id="sr-2">Services</h1>
+                               <p id="sr-3">In order to help you grow your business, our carefully selected experts can advise you in in the following areas:</p>
+                                 </div>
+                             
+                                 <div id="sr-4">
+                                    <i class="fas fa-pen icon-cstm-a"></i>
+                                   <h1 id="sr-a"> Web Design</h1>
+                                   <P id="content-a">Consectetur adipiscing elit. Praesent molestie urna hendrerit erat tincidunt
+                                        tempus. Aliquam a leo risus. Fusce a metus non augue dapibus porttitor at in
+                                        <span id="span-c"> mauris. Pellentesque commodo...</span></P>
+                     
+                                 </div>
+                                 <div id="sr-5">
+                                    <i class="fas fa-code icon-cstm-b"></i>
+                                   <h1 id="sr-b"> Web Development </h1>
+                                   <p id="content-b">Consectetur adipiscing elit. Praesent molestie urna hendrerit erat 
+                                       tincidunt tempus. Aliquam a leo risus. Fusce a metus non augue dapibus porttitor at in
+                                       <span id="span-b"> mauris. Pellentesque commodo...</span></p>   
+                                
+                                 </div>
+                                 <div id="sr-6">
+                                     <i class="fas fa-search icon-cstm-c"></i>
+                                    <h1 id="sr-c"> SEO Analisys</h1>
+                                    <p id="content-c">Consectetur adipiscing elit. Praesent molestie urna hendrerit erat tincidunt 
+                                        tempus. Aliquam a leo risus. Fusce a metus non augue dapibus porttitor at in
+                                        <span id="span-a"> mauriS.Pellentesque commodo...</span></p>
+                                </div>    
+                     </div>
+                     <div id="front">
+                         <div id="front-d">
+                             <h1 id="front-heading">Latest News</h1>
+                             <p id="front-para">If you are interested in the latest articles in the industry, take a sneak peek at our blog. You have nothing to loose!</p>
+                             <div id="front-e">
+                    
+                                        <i class="fas fa-greater-than icon-cstm-d"></i>    
+                                                    <h1 id="text">See Blog</h1>
+                             </div>
+                         </div>
+                         <div id="front-a" > 
+                             <img id="front-img" src="./images/photo-1447687643809-e05fd462f350-360x213.jpg" alt="">
+                             <h1 id="a-heading">We Have Made Illdy Theme SEO Friendly</h1>
+                             <p id="a-para">Illdy One Page WordPress theme is fully SEO friendly and is ready to help you to achieve the highest rankings…</p>
+                         </div>
+                         <div id="front-b">
+                             <img id="front-img-a" src="./images/photo-1449168013943-3a15804bb41c-360x213.jpg" alt="">
+                             <h1 id="b-heading">
+                                Stunning One Page WordPress Theme For Masses</h1>
+                             <p id="b-para">This theme is not just free, it is free for private and commercial use si</p>
+                         </div>
+                         <div id="front-c">
+                             <img id="front-img-b" src="./images/photo-1450101215322-bf5cd27642fc-360x213.jpg" alt="">
+                             <h1 id="c-heading">
+                                Hello world!</h1>
+                             <p id="c-para">Welcome to colorlib.com. This is our first post around Illdy WordPress theme. No</p>
+                         </div>
+                         <div id="small">
+                            <div id="small-a">
+                                <h1>260</h1>
+                                <p id="word">Projects</p>
+                            </div>
+                            <div id="small-line"></div>
+                            <div id="small-c">
+                                <h1>120</h1>
+                                <p id="word-1">Clients</p>
+                            </div>
+                            <div id="small-line-a"></div>
+                            <div id="small-e">
+                                <h1>260</h1>
+                                <p id="word-2">Coffes</p>
+                            </div>
+                        </div>
+                            <div id="team">
+                                <div id="team-a">
+                                    <h1 id="team-heading">Team</h1>
+                                    <p id="team-para">Meet the people that are going to take your business to the next level.</p>
+                                </div>
+                                <div id="team-circle"></div>
+                                <div id="team-circle-a"></div>
+                                <div id="team-circle-b"></div>
+                                <div id="team-circle-c">
+                                    <h2 id="team-circle-c-a">Mark Lawrance</h2>
+                                    <h3 id="team-circle-c-b">Web Designer</h3>
+                                    <p id="team-circle-c-c">Creative, detail-oriented, always focused.</p>
+                                
+                                    <div id="circle-icon">
+                                        <i class="fab fa-facebook-f icon-cstm-e"></i>
+                                    </div>
+                                    <div id="circle-icon">
+                                        <i class="fab fa-twitter icon-cstm-e"></i>
+                                    </div>
+                                    <div id="circle-icon">
+                                        <i class="fab fa-linkedin-in icon-cstm-e"></i>
+                                    </div>
+                                </div>
+                                <div id="team-circle-d">
+                                    <h2 id="team-circle-d-a">Jane Stenton</h2>
+                                    <h3 id="team-circle-d-b">SEO Specialist</h3>
+                                    <p id="team-circle-d-c">Curious, tech-geeck and gets serious when it comes to work.</p>
+                                    <div id="circle-icon-a">
+                                        <i class="fab fa-facebook-f icon-cstm-f"></i>
+                                    </div>
+                                    <div id="circle-icon-a">
+                                        <i class="fab fa-twitter icon-cstm-f"></i>
+                                    </div>
+                                    <div id="circle-icon-a">
+                                        <i class="fab fa-linkedin-in icon-cstm-f"></i>
+                                    </div> 
+
+                                </div>
+                                <div id="team-circle-e">
+                                    <h2 id="team-circle-e-a">John Smith</h2>
+                                    <h3 id="team-circle-e-b">Developer</h3>
+                                    <p id="team-circle-e-c">Enthusiastic, passionate with great sense of humor.</p>
+                                    <div id="circle-icon-b">
+                                        <i class="fab fa-facebook-f icon-cstm-g"></i>
+                                    </div>
+                                    <div id="circle-icon-b">
+                                        <i class="fab fa-twitter icon-cstm-g"></i>
+                                    </div>
+                                    <div id="circle-icon-b">
+                                        <i class="fab fa-linkedin-in icon-cstm-g"></i>
+                                    </div>
+                                       
+                                </div>
+                                <div id="contact">
+                                    <div id="contact-main">
+                                        <h1 id="contact-heading">Contact Us</h1>
+                                    </div>
+                                    <div id="contact-a">
+                                        <h1 id="contact-b">Address</h1>
+                                        <div id=contact-c></div>
+                                        <p id="contact-d">Street 221B Baker Street,
+                                            London, UK</p>
+                                    </div>
+                                    <div id="contact-e">
+                                        <h1 id="contact-f">Customer Support</h1>
+                                        <div id="contact-g"></div>
+                                        <p id="contact-h">E-mail: contact@site.com
+                                            Phone: (555) 555-5555</p>
+                                    </div>
+                                    <div id="contact-i">
+                                        <i class="fab fa-twitter icon-cstm-h"></i>
+                                        <i class="fab fa-facebook-f icon-cstm-h"></i>
+                                        <i class="fab fa-linkedin-in icon-cstm-h"></i>
+                                    </div>
+                                    <div id="box-c"> <span id="span-a"> Your Name (required)</span>
+                                        <input id="input-a" type="name" >
+                                    </div>
+                                  <div id="box-d"><span id="span-b"> Your Email (required)</span>
+                                       <input id="input-b" type="email" >
+
+                                    </div>
+                                    <div id="box-e"><span id="span-c"> Subject</span>
+                                        <input id="input-c" type="subject">
+
+                                    </div>
+                                    <div id="box-f"><span id="span-d">Your Message</span>
+                                        <!-- <input id="input-d" type="message"> -->
+                                        <textarea name="commant" id="input-d" cols="30" rows="10"></textarea>
+                                    </div>
+                                     <button id="btn-btn">Send</button>
+                                </div>
+                                <div id="last">
+                                    <div id="last-last">
+                                    <div id="last-a"><span id="a-a">PRODUCTS</span></div>
+                                    <div id="last-a"><span id="a-a">INFORMATION</span></div>
+                                    <div id="last-a"><span id="a-a">SUPPORT</span></div>
+                                    <div id="last-b">
+                                        <i class="fas fa-greater-than icon-cstm-i"></i>
+                                        <span id="hello">Our Work</span>
+                                    </div>
+                                    <div id="last-b">
+                                        <i class="fas fa-greater-than icon-cstm-i"></i>
+                                        <span id="hello">Pricing</span>
+                                    </div>
+                                    <div id="last-b">
+                                        <i class="fas fa-greater-than icon-cstm-i"></i>
+                                        <span id="hello">Documentation</span>
+                                    </div>
+                                    <div id="last-b">
+                                        <i class="fas fa-greater-than icon-cstm-i"></i>
+                                        <span id="hello">Club</span>
+                                    </div>
+                                    <div id="last-b">
+                                        <i class="fas fa-greater-than icon-cstm-i"></i>
+                                        <span id="hello">Terms</span>
+                                    </div>
+                                    <div id="last-b">
+                                        <i class="fas fa-greater-than icon-cstm-i"></i>
+                                        <span id="hello">FAQs</span>
+                                    </div>
+                                    <div id="last-b">
+                                        <i class="fas fa-greater-than icon-cstm-i"></i>
+                                        <span id="hello">News</span>
+                                    </div>
+                                    <div id="last-b">
+                                        <i class="fas fa-greater-than icon-cstm-i"></i>
+                                        <span id="hello">Affiliates</span>
+                                    </div>
+                                    <div id="last-b">
+                                        <i class="fas fa-greater-than icon-cstm-i"></i>
+                                        <span id="hello">Forums</span>
+                                    </div>
+                                    <div id="last-b">
+                                        <i class="fas fa-greater-than icon-cstm-i"></i>
+                                        <span id="hello">Announcement</span>
+                                    </div>
+                                    <div id="last-b">
+                                        <i class="fas fa-greater-than icon-cstm-i"></i>
+                                        <span id="hello">Blog</span>
+                                    </div>
+                                    <div id="last-b">
+                                        <i class="fas fa-greater-than icon-cstm-i"></i>
+                                        <span id="hello">Contact</span>
+                                    </div>
+                                    <div id="end">
+                                        <div id="end-c">
+                                        <span id="end-a"><span id="hello-a" > Theme: Illdy.</span><span id="end-b"> © Copyright 2017. All Rights Reserved.</span>
+                                    </div>
+                                    </div>
+                                </div>
+                                </div>
+                                   
+                                 </div>
+
+</body>
+</html>
